@@ -1,16 +1,10 @@
--- ============================================
--- SOLUTION - INSERT STUDENT RECORDS
--- ============================================
-
-USE CollegeDB;
-
--- Insert student records
+CREATE DATABASE KOKILAN;
+USE KOKILAN;
 INSERT INTO Student
-    (StudentID, StudentName, Gender, DepartmentID)
+    (StudentID, StudentName, DOB, Gender, DepartmentID)
 VALUES
-    (1001, 'Arun', 'Male', 101),
-    (1002, 'Divya', 'Female', 102),
-    (1003, 'Karthik', 'Male', 101);
+    (1001, 'Arun', '2004-05-15', 'Male', 101),
+    (1002, 'Divya', '2004-08-20', 'Female', 102),
+    (1003, 'Karthik', '2003-12-10', 'Male', 101);
 
--- Display all student records
 SELECT * FROM Student;
